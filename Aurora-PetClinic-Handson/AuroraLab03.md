@@ -41,7 +41,7 @@ ubuntu@ip-172-31-0-145:~$ mysql -h$DBURL -u$DBUSER -p"$DBPASS" -e "GRANT SELECT,
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
 
-5. petclinic user를 이용하여 schema를 생성합니다.
+5. petclinic user를 이용하여 Schema/Table을 생성 하고, Table들이 정상 생성되었는지 확인합니다.
 
 ```
 ubuntu@ip-172-31-0-145:~/spring-petclinic/src/main/resources/db/mysql$ mysql -h$DBURL -upetclinic -ppetclinic petclinic <schema.sql
@@ -61,7 +61,7 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 +---------------------+
 ```
 
-6. petclinic user를 이용하여 data를 입력합니다.
+6. petclinic user를 이용하여 data를 입력하고, 입력이 정상적으로 되었는지 확인합니다.
 
 ```
 ubuntu@ip-172-31-0-145:~/spring-petclinic/src/main/resources/db/mysql$ mysql -h$DBURL -upetclinic -ppetclinic petclinic <data.sql
